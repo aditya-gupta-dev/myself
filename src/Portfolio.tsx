@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { useTheme } from "@/components/theme-provider";
 import { config } from "./config";
+import { ExpandableNav } from "@/components/ExpandableNav";
 
 export default function Portfolio() {
   const { theme, setTheme } = useTheme();
@@ -92,6 +93,11 @@ export default function Portfolio() {
             ))}
           </div>
         </section>
+      </div>
+      
+      {/* Expandable Navigation */}
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
+        <ExpandableNav />
       </div>
     </main>
   );
